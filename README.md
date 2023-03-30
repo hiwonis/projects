@@ -2,11 +2,11 @@
 
 This repository contains source codes of projects I have been working on. 
 
-**1. dataMate**
+[**1. dataMate**](#dataMate)
 
-**2. paperMate**
+[**2. paperMate**](#paperMate)
 
-## **1. dataMate** 
+## <a name="dataMate">**1. dataMate**</a> 
 ### (developed on 2020-08)
 
 dataMate is a program developed to assist input and analysis of data in clinical studies. 
@@ -33,7 +33,7 @@ The data is sorted for easy understanding of trends over time, and results of te
 After conducting exploratory analysis like this, further analysis can be performed using specialized software such as SPSS. For utilizing in such softwares, dataMate also supports extraction sorted data in csv files. 
 
 
-## **2. paperMate** 
+## <a name="paperMate">**2. paperMate**</a>
 ### (developed on 2023-03)
 
 paperMate is a program developed to automate paperwork. In some standardized tasks during paperwork, only a few parts need to be modified while the rest remains the same. By inputting only the information that needs to be modified, paperMate automatically completes the rest. By using Selenium library, paperMate can automate tasks on web-based systems related to paperwork as well.
