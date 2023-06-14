@@ -2,13 +2,15 @@
 
 This repository contains source codes of projects I have been working on. 
 <br>
-
-- ### [**dataMate**](#datamate)
-- ### [**paperMate**](#papermate) <br>
+- ## Applications
+    - ### [**dataMate**](#datamate)
+    - ### [**paperMate**](#papermate) <br>
+- ## Data analysis
+    - ### [**Skin pores topography**](./data_analysis/skin%20pores%20topography/analysis_skin%20pores%20topography.md)
 
 ## **dataMate** 
 #### developed on 2020-08
-#### [source code](https://github.com/hiwonis/projects/blob/main/applications/dataMate.py)
+#### [source code](./applications/dataMate.py)
 
 <br>
 dataMate is a program developed to assist input and analysis of data in clinical studies. <br>
@@ -40,7 +42,7 @@ After conducting exploratory analysis like this, further analysis can be perform
 
 ## **paperMate**
 #### developed on 2023-03
-#### [source code](https://github.com/hiwonis/projects/blob/main/applications/paperMate.py)
+#### [source code](./applications/paperMate.py)
 
 <br>
 paperMate is a program developed to automate paperwork. In some standardized tasks during paperwork, only a few parts need to be modified while the rest remains the same. By inputting only the information that needs to be modified, paperMate automatically completes the rest. By using Selenium library, paperMate can automate tasks on web-based systems related to paperwork as well.<br>
