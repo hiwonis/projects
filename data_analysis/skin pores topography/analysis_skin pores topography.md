@@ -269,7 +269,6 @@ df_new = pd.concat([df,pd.Series(col, name = 'pro_0.7')], axis = 1)
 
 
 ```python
-
 for i in range(df_new.shape[0]):
     if df_new.loc[i, 'pro_0.７'] != 0:
         print('Sub %s_pore %s, elong: %f' %(df_new.iloc[i, 0], df_new.iloc[i, 1], (df_new.iloc[i, 6]/df_new.iloc[i,7])))
@@ -288,6 +287,7 @@ for i in range(df_new.shape[0]):
 ```
 
     Sub 4_pore 140, elong: 10.864886
+    Local height = 0.121000, Total height = 0.128000
     
 
 
@@ -296,10 +296,10 @@ for i in range(df_new.shape[0]):
     
 
 
-    Local height = 0.121000, Total height = 0.128000
     
 
     Sub 9_pore 44, elong: 3.722885
+    Local height = 0.134000, Total height = 0.116000
     
 
 
@@ -308,9 +308,9 @@ for i in range(df_new.shape[0]):
     
 
 
-    Local height = 0.134000, Total height = 0.116000
     
     Sub 15_pore 261, elong: 13.346306
+    Local height = 0.078000, Total height = 0.095000
     
 
 
@@ -319,7 +319,6 @@ for i in range(df_new.shape[0]):
     
 
 
-    Local height = 0.078000, Total height = 0.095000
     
 
 
@@ -423,8 +422,3 @@ out
 </div>
 
 
-
-
-```python
-out.to_excel("z:/result.xlsx", index = False)
-```
