@@ -204,17 +204,14 @@ for i in test:
     a += 1
 ```
 
-    1
-    
-
-
-    
+ 
+1
+   
 ![png](./imgs/output_2_1.png)
     
 
 
-
-    2
+2
     
 
 
@@ -223,8 +220,7 @@ for i in test:
     
 
 
-
-    3
+3
     
 
 
@@ -235,14 +231,14 @@ for i in test:
 
 .<br>.<br>.
 
-    197
+197
 
 ![png](./imgs/output_2_255.png)
 
 
 
     
-    
+  
 
 
 
@@ -286,8 +282,9 @@ for i in range(df_new.shape[0]):
         print('Local height = %f, Total height = %f' %(prominences[id],-min(x)) )
 ```
 
-    Sub 4_pore 140, elong: 10.864886
-    Local height = 0.121000, Total height = 0.128000
+
+Sub 4_pore 140, elong: 10.864886<br>
+Local height = 0.121000, Total height = 0.128000
     
 
 
@@ -298,8 +295,8 @@ for i in range(df_new.shape[0]):
 
     
 
-    Sub 9_pore 44, elong: 3.722885
-    Local height = 0.134000, Total height = 0.116000
+Sub 9_pore 44, elong: 3.722885<br>
+Local height = 0.134000, Total height = 0.116000
     
 
 
@@ -309,9 +306,9 @@ for i in range(df_new.shape[0]):
 
 
     
-    Sub 15_pore 261, elong: 13.346306
-    Local height = 0.078000, Total height = 0.095000
-    
+Sub 15_pore 261, elong: 13.346306<br>
+Local height = 0.078000, Total height = 0.095000
+
 
 
     
