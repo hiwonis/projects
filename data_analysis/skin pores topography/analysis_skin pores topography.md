@@ -1,3 +1,11 @@
+## Skin Pores Topography Analysis
+<br>This project was for analyzing topographical features of skin pores. <br>
+For over 20k skin pores from 101 subjects, quantitative analysis was done adopting signal processing methods. <br>
+The project was a part of study of skin pores ([**published**](https://onlinelibrary.wiley.com/doi/10.1111/srt.13082)) 
+<br><br>
+
+### STEP 1
+Import the required libraries and load the raw data.<br>
 ```python
 import numpy as np
 import pandas as pd
@@ -181,9 +189,12 @@ df
 </table>
 <p>23796 rows × 10 columns</p>
 </div>
+<br>
 
 
-
+### STEP 2
+Generate sectional views of skin pores along the long axis, focusing on prominent hills within each view.<br>
+Initial observations of the topographical features indicate that some views may contain more than one skin pore. <br>
 
 ```python
 test = df['Depth Along Principal Axis']
@@ -204,7 +215,7 @@ for i in test:
     a += 1
 ```
 
- 
+
 1
    
 ![png](./imgs/output_2_1.png)
@@ -234,13 +245,15 @@ for i in test:
 197
 
 ![png](./imgs/output_2_255.png)
+<br><br>
 
-
-
-    
+ 
   
 
-
+### STEP 3
+Determine if a sectional view has multiple skin pores by comparing the height of a prominent hill to 70% of the maximum depth.<br> 
+If the height meets or exceeds this threshold, it suggests the presence of at least two skin pores.<br>
+Apply this criterion to each record to differentiate between a single skin pore and a merged cavity formed by multiple skin pores.
 
 ```python
 col = []
@@ -258,11 +271,11 @@ for i in test:
 
 df_new = pd.concat([df,pd.Series(col, name = 'pro_0.7')], axis = 1)
 ```
+<br>
 
 
-
-
-
+### STEP 4
+Generate plots specifically for the sectional views that contain multiple skin pores. These plots will be used for review.
 
 ```python
 for i in range(df_new.shape[0]):
@@ -313,21 +326,18 @@ Local height = 0.078000, Total height = 0.095000
 
     
 ![png](./imgs/output_4_23.png)
-    
+<br><br>
 
 
     
-
+### STEP 5
+Calculate ratios of merged skin pores for every subject then export the result for further analysis.
 
 ```python
 li = []
 for s in sub:
-#     li.append(sum(df_new.loc[df['Subject']==s]['new_merge2_0.9']))    
     li.append(sum(df_new.loc[df['Subject']==s]['pro_0.7'])/len(df_new.loc[df['Subject']==s]['pro_0.7'])*100)
-```
 
-
-```python
 out = pd.concat([pd.Series(sub, name = 'sub'), pd.Series(li, name='pro_0.7')], axis = 1)
 out
 ```
