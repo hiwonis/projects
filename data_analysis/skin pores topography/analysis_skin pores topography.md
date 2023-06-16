@@ -1,7 +1,7 @@
 ## Skin Pores Topography Analysis
 <br>This project was for analyzing topographical features of skin pores. <br>
 For over 20k skin pores from 101 subjects, quantitative analysis was done adopting signal processing methods. <br>
-The project was a part of study of skin pores ([**published**](https://onlinelibrary.wiley.com/doi/10.1111/srt.13082)) 
+The project was a part of study for skin pores ([**published**](https://onlinelibrary.wiley.com/doi/10.1111/srt.13082)) 
 <br><br>
 
 ### STEP 1
