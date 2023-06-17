@@ -6,6 +6,7 @@ This repository contains source codes of projects I have been working on.
     - ### [**dataMate**](#datamate)
     - ### [**paperMate**](#papermate) <br>
 - ## Data analysis
+    - ### [**Skin pores clustering**](./data_analysis/skin%20pores%20clustering/kmeans.md)
     - ### [**Skin pores topography**](./data_analysis/skin%20pores%20topography/analysis_skin%20pores%20topography.md)
 
 ## **dataMate** 
